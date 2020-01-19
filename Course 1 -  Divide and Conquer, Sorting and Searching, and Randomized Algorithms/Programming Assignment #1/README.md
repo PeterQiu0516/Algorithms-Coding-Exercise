@@ -7,8 +7,8 @@ To get the most out of this assignment, your program should restrict itself to m
 
 *So: what's the product of the following two 64-digit numbers?*
 
-*3141592653589793238462643383279502884197169399375105820974944592*
+**3141592653589793238462643383279502884197169399375105820974944592**
 
-*2718281828459045235360287471352662497757247093699959574966967627*
+**2718281828459045235360287471352662497757247093699959574966967627**
 
 [Food for thought: the number of digits in each input number is a power of 2. Does this make your life easier? Does it depend on which algorithm you're implementing?]
