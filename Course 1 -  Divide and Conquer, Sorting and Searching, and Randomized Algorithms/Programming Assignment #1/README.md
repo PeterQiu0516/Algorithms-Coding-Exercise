@@ -5,7 +5,7 @@ In this programming assignment, you will implement one or more of the integer mu
 
 To get the most out of this assignment, your program should restrict itself to multiplying only pairs of single-digit numbers by implementing **recursive integer multiplication and/or Karatsuba's algorithm.**
 
-*So: what's the product of the following two 64-digit numbers?*
+So: *what's the product of the following two 64-digit numbers?*
 
 **3141592653589793238462643383279502884197169399375105820974944592**
 
