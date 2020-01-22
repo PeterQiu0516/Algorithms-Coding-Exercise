@@ -17,6 +17,7 @@
   + Step 1: recursively sort first half of the input array
   + Step 2: recursively sort second half of the unput array
   + Step 3: merge two sorted sublists into one
+  
     Code (You may also refer to the `MergeSort.py` file):
     ```
     def merge_sort(arr):
