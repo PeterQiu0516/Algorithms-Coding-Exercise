@@ -13,6 +13,39 @@
   
     E.g.: `ac = 56*12 = (5*10 + 6) * (1*10 +2) = 100*(5*1) + 10*[(5+6)*(1+2)-5*1-6*2] + (6*2) = 672`
 + ### Merge Sort
+  Basic sorting algorithm based on Divide and Conquer:
+  + Step 1: recursively sort first half of the input array
+  + Step 2: recursively sort second half of the unput array
+  + Step 3: merge two sorted sublists into one
+    ```
+    def merge_sort(arr):
+    n = len(arr)
+    if (n <= 1):
+        return arr
+    elif (n == 2):
+        if (arr[0] >= arr[1]):
+            t = arr[0]
+            arr[0] = arr[1]
+            arr[1] = t
+        return arr
+    else:
+        A = merge_sort(arr[:int(n/2)])
+        B = merge_sort(arr[int(n/2):])
+        
+        #Merge A & B
+        arr = list(np.zeros(n))
+        i = 0
+        j = 0
+        for k in range(0,n):
+            if i < int(n/2) and (j == len(B) or A[i]<=B[j]):
+                arr[k] = A[i]
+                i = i + 1
+            else:
+                arr[k] = B[j]
+                j = j + 1
+        print(arr)
+        return arr
+    ```
 + ### Asymptotic Analysis
 
 ## Lecture Slides
