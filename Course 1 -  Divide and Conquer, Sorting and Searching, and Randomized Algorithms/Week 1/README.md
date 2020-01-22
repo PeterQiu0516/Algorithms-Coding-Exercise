@@ -82,7 +82,6 @@ So: *what's the product of the following two 64-digit numbers?*
 ### Solutions:
 
 ```
-
 #include <cmath>
 
 long kara(long x, long y){
@@ -108,7 +107,6 @@ long kara(long x, long y){
         return ((long)pow(10,t1+t2)*ac+(long)pow(10, t1)*(t-ac-bd)+bd);
     }
 }
-
 ```
 
 You may also refer to the `Karatsuba.cpp` file.
