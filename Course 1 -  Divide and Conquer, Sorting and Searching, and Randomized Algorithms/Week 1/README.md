@@ -1,6 +1,12 @@
-# Programming Assignment #1
+# Week 1
 
-## Instructions:
+## Problem Set #1
+
+Some conceptional questions about the course content.
+
+## Programming Assignment #1
+
+### Instructions:
 In this programming assignment, you will implement one or more of the integer multiplication algorithms described in lecture.
 
 To get the most out of this assignment, your program should restrict itself to multiplying only pairs of single-digit numbers by implementing **recursive integer multiplication and/or Karatsuba's algorithm.**
