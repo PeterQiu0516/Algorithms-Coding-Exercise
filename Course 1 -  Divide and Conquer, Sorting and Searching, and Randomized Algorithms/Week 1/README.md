@@ -18,7 +18,7 @@
   + Step 2: recursively sort second half of the unput array
   + Step 3: merge two sorted sublists into one
   
-    Code (You may also refer to the `MergeSort.py` file):
+    Code written in `Python` (You may also refer to the `MergeSort.py` file):
     ```
     def merge_sort(arr):
       n = len(arr)
@@ -81,6 +81,7 @@ So: *what's the product of the following two 64-digit numbers?*
 
 ### Solutions:
 
+Code written in `C++`:
 ```
 #include <cmath>
 
