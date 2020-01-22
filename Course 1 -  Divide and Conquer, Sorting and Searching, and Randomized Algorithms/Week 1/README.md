@@ -11,7 +11,7 @@
   + Step 3: `xy = 10^n*ac+10^(n/2)*(ad+bc)+bd = 10^n*ac+10^(n/2)*(t-ac-bd)+bd (*)`
   + Step 4: Recursively compute `ac, bd and t` until the multiplcation get down to 1-digit simple calculation.
   
-    E.g.: `ac = 56*12 = (5*10 + 6) * (1*10 +2) = 100*(5*1) + 10*((5+6)*(1+2)-5*1-6*2) + (6*2) = 672`
+    E.g.: `ac = 56*12 = (5*10 + 6) * (1*10 +2) = 100*(5*1) + 10*[(5+6)*(1+2)-5*1-6*2] + (6*2) = 672`
 + ### Merge Sort
 + ### Asymptotic Analysis
 
