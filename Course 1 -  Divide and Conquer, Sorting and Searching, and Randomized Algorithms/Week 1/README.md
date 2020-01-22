@@ -76,6 +76,9 @@ So: *what's the product of the following two 64-digit numbers?*
 
 > **2718281828459045235360287471352662497757247093699959574966967627**
 
+---
+[Food for thought: the number of digits in each input number is a power of 2. Does this make your life easier? Does it depend on which algorithm you're implementing?]
+
 ### Solutions:
 
 ```
@@ -129,5 +132,3 @@ For Mac OS, run
 ```
 
 
----
-[Food for thought: the number of digits in each input number is a power of 2. Does this make your life easier? Does it depend on which algorithm you're implementing?]
