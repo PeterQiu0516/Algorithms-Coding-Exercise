@@ -49,6 +49,11 @@
           return arr
     ```
 + ### Asymptotic Analysis
+  + O(n) (Big O Notation) : less than or equal to (upper bound)
+  + Ω(n) (Big Omega Notation) : greater than or equal to (lower bound)
+  + Θ(n) (Big theta notation) : both O(n) & Ω(n), equal to
+  
+  `E.g. T(n) for merge sort <= 4nlogn + 6n = O(nlogn) = O(n^2) = Ω(nlogn) = Ω(n) = Θ(nlogn) ≠ Θ(n)`
 
 ## Lecture Slides
 + [Intro&Karatsuba&MergeSort]()
