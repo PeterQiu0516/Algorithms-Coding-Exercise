@@ -1,6 +1,9 @@
 # Week 1 - Merge Sort, "big-oh" notation and asymptotic analysis
 
+
+
 ## Summary
+
 + ### Karatsuba
   To compute the product of two decimal integers `x` and `y` with approximately `n` digits.
   
@@ -55,13 +58,20 @@
   
   `E.g. T(n) for merge sort <= 4nlogn + 6n = O(nlogn) = O(n^2) = Ω(nlogn) = Ω(n) = Θ(nlogn) ≠ Θ(n)`
 
+
+
 ## Lecture Slides
+
 + [Intro & Karatsuba & MergeSort]()
 + [Asymptotic Analysis]()
+
+
 
 ## Problem Set #1
 
 Some conceptional questions about the course content.
+
+
 
 ## Programming Assignment #1
 
@@ -77,57 +87,10 @@ So: *what's the product of the following two 64-digit numbers?*
 > **2718281828459045235360287471352662497757247093699959574966967627**
 
 ---
-[Food for thought: the number of digits in each input number is a power of 2. Does this make your life easier? Does it depend on which algorithm you're implementing?]
+
 
 ### Solutions:
 
-Code written in `C++`:
-```
-#include <cmath>
-
-long kara(long x, long y){
-    if(!x || !y) return 0;
-
-    long digit_x = 1, digit_y = 1;
-    long x_tmp = x, y_tmp = y;
-    while(x_tmp/=10) digit_x++;
-    while(y_tmp/=10) digit_y++;
-
-    if (digit_x == 1 && digit_y == 1)  return x*y;
-    else
-    {
-        int t1 = (int) digit_x / 2;
-        int t2 = (int) digit_y / 2;
-        long a = x / (long) pow(10,t1);
-        long b = x % (long) pow(10,t1);
-        long c = y / (long) pow(10,t2);
-        long d = y % (long) pow(10,t2);
-        long ac = kara(a,c);
-        long bd = kara(b,d);
-        long t = kara((a+b),(c+d));
-        return ((long)pow(10,t1+t2)*ac+(long)pow(10, t1)*(t-ac-bd)+bd);
-    }
-}
-```
-
-You may also refer to the `Karatsuba.cpp` file.
-
-#### Compiling
-
-For gcc compiler:
-In command line, get to the file directory and run
-
-```
-g++ Karatsuba.cpp -o Karatsuba
-```
-
-Then, for Windows users, run
-```
-.\Karatsuba.exe
-```
-For Mac OS, run
-```
-.\Karatsuba
-```
+Code written in `C++`, included in the `Karatsuba.cpp` file.
 
 
